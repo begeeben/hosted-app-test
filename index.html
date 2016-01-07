@@ -16,7 +16,7 @@
 				mozAppsStatus.textContent = 'mozApps available';
 				installButton.removeAttribute('disabled');
 				installButton.addEventListener('click', function () {
-					navigator.mozApps.install();
+					navigator.mozApps.install('http://begeeben.github.io/hosted-app-test/manifest.webapp');
 				});
 			} else {
 				console.log('mozApps unavailable');
