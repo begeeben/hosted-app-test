@@ -1,0 +1,5 @@
+{
+  "name": "hosted-app-test",
+  "description": "Test Web APIs on hosted app",
+  "launch_path": "/index.html"
+}
