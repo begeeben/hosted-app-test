@@ -14,7 +14,7 @@
 			if (navigator.mozApps) {
 				console.log('mozApps available');
 				mozAppsStatus.textContent = 'mozApps available';
-				installButton.removeAttribute('disable');
+				installButton.removeAttribute('disabled');
 				installButton.addEventListener('click', function () {
 					navigator.mozApps.install();
 				});
