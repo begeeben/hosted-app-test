@@ -1,5 +1,5 @@
 {
   "name": "hosted-app-test",
   "description": "Test Web APIs on hosted app",
-  "launch_path": "/index.html"
+  "launch_path": "http://begeeben.github.io/hosted-app-test/index.html"
 }
