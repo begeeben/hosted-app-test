@@ -1,8 +1,5 @@
 {
   "name": "hosted-app-test",
   "description": "Test Web APIs on hosted app",
-  "launch_path": "/hosted-app-test/index.html",
-  "permissions" : {
-  	"geolocation": {}
-  }
+  "launch_path": "/hosted-app-test/index.html"
 }
