@@ -4,15 +4,23 @@
 	</head>
 	<body>
 		<button id="install-button" disabled>Install</button>
+		<p id="mozapp-status"></p>
 		<p id="geolocation-status"></p>
 
 		<script>
 			var installButton = document.getElementById('install-button');
-			if (navigator.Apps) {
+			var mozAppsStatus = document.getElementById('mozapp-status');
+
+			if (navigator.mozApps) {
+				console.log('mozApps available');
+				mozAppsStatus.textContent = 'mozApps available';
 				installButton.removeAttribute('disable');
 				installButton.addEventListener('click', function () {
-					navigator.Apps.install();
+					navigator.mozApps.install();
 				});
+			} else {
+				console.log('mozApps unavailable');
+				mozAppsStatus.textContent = 'mozApps unavailable';
 			}
 
 			var p = document.getElementById('geolocation-status');
