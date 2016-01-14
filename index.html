@@ -6,24 +6,11 @@
 		<button id="install-button" disabled>Install</button>
 		<p id="geolocation-status"></p>
 
-		<script>
-			var installButton = document.getElementById('install-button');
-			if (navigator.Apps) {
-				installButton.removeAttribute('disable');
-				installButton.addEventListener('click', function () {
-					navigator.Apps.install();
-				});
-			}
+		<button id="alert-button">Alert</button>
+		<button id="confirm-button">Confirm</button>
+		<button id="prompt-button">Prompt</button>
 
-			var p = document.getElementById('geolocation-status');
-
-			if (navigator.geolocation) {
-				navigator.geolocation.getCurrentPosition(function(position) {
-					p.textContent = 'Latitude: ' + position.coords.latitude + ', Longitude: ' + position.coords.longitude;
-				});
-			} else {
-				p.textContent = 'Geolocation API unavailable';
-			}
-		</script>
+		<script src="geolocation-test.js"></script>
+		<script src="dialog-test.js"></script>
 	</body>
 </html>
